@@ -1,0 +1,234 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 	tools:context="com.family.finflow.HouseActivity" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/today"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <!-- balance 余额 -->
+            <TextView
+                android:id="@+id/balance"             
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="总额"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="收入:￥" />
+
+            <TextView
+                android:id="@+id/incomeNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="00.00" />
+
+            <Button
+                android:id="@+id/notedown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="记一下" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textpay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="支出:￥" />
+
+            <TextView
+                android:id="@+id/payNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="00.00" />
+            
+            <TextView
+                android:id="@+id/nulltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="" />
+
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRowN01"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+       </TableRow>
+        
+        <View  android:layout_height="2px" 
+            	android:layout_width="match_parent"
+           		android:background="#66CCFF"/> 
+      		
+        <TableRow
+            android:id="@+id/tableRown02"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+       </TableRow>
+       
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+              
+              <TextView
+            android:id="@+id/tswk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.99"
+            android:text="本周:" />
+            
+            
+               <TextView
+            android:id="@+id/inweek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.99"
+            android:text="收入:" />
+               
+        </TableRow>
+        
+        
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+              
+              <TextView
+            android:id="@+id/weekdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.99"
+            android:text="xx - xx" />
+            
+            
+               <TextView
+            android:id="@+id/payweek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.99"
+            android:text="支出：" />
+               
+        </TableRow>
+
+           <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+              
+              <TextView
+            android:id="@+id/month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.99"
+            android:text="本月：" />
+            
+            
+               <TextView
+            android:id="@+id/inmonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.99"
+            android:text="收入：" />
+               
+        </TableRow>
+        
+              <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+              
+              <TextView
+            android:id="@+id/monthdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.99"
+            android:text="XX-XX" />
+            
+            
+               <TextView
+            android:id="@+id/paymonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.99"
+            android:text="支出：" />
+               
+        </TableRow>
+        
+                  
+        
+      <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_weight="0.5"
+            android:background="#00FF99"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+             
+            <TextView
+            android:id="@+id/flowchech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.99"
+            android:text="每月流水" />
+            
+            
+             <TextView
+            android:id="@+id/managekind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.99"
+            android:text="分类管理" />
+               
+        
+            <TextView
+            android:id="@+id/more1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.99"
+            android:text="更多" />
+               
+               
+      </TableRow>
+     
+
+</TableLayout>
+
